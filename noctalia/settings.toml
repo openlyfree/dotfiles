@@ -322,16 +322,13 @@ fill_mode = "stretch"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+    path = "~/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
 
     [wallpaper.last]
-    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
-
-    [wallpaper.monitors.DP-1]
-    path = "/home/ethan/Pictures/Wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+    path = "~/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+    path = "~/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
 
 [weather]
 unit = "imperial"

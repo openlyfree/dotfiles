@@ -71,6 +71,10 @@
 !/umbriel/**
 /umbriel/*.bak-*
 
+# Personal/runtime leftovers that shouldn't be published.
+/gtk-3.0/bookmarks
+/strata/tabs.toml
+
 # Extra safety net if the rules above are ever widened.
 *.key
 *.pem
