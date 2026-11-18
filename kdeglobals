@@ -135,7 +135,7 @@ ColorScheme=noctalia
 Name=noctalia
 
 [Icons]
-Theme=Colloid-Dark
+Theme=breeze-dark
 
 [KDE]
 contrast=4
