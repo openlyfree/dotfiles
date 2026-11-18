@@ -47,24 +47,22 @@
 !/qt5ct/**
 !/qt6ct/
 !/qt6ct/**
-!/rio/
-!/rio/**
-!/snappy-switcher/
-!/snappy-switcher/**
 !/sonora/
 !/sonora/**
 /sonora/sonora.backup.json
+/sonora/themes/noctalia.json
 !/strata/
 !/strata/**
 !/zed/
 !/zed/**
 !/kdeglobals
 
-# Herdr: only its Noctalia theme and layouts, not the 13M of icons.
+# Herdr: only user themes and layouts, not the 13M of icons.
 !/herdr-app/
 /herdr-app/**
 !/herdr-app/themes/
 !/herdr-app/themes/**
+/herdr-app/themes/noctalia.json
 !/herdr-app/layouts/
 !/herdr-app/layouts/**
 

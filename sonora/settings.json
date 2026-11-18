@@ -158,7 +158,6 @@
   "font": "Cascadia Code",
   "startup": "home",
   "appearance": {
-    "theme": "noctalia",
     "adaptive_theme": false,
     "ambient": true,
     "ambient_motion": true,
