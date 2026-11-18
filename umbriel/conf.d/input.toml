@@ -1,0 +1,13 @@
+[input.keyboard]
+numlock_toggle = true
+
+[input.touchpad]
+natural_scroll = true
+disable_while_typing = false
+tap_button_map = "left_right_middle"
+
+[input.cursor]
+hardware_cursor = true
+
+[input.touch]
+enabled = false

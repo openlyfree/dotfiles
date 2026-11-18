@@ -1,0 +1,82 @@
+# ~/.config dotfiles repo
+# Deny by default: ~/.config holds browser profiles, tokens, credentials, etc.
+/*
+
+# Keep this ignore file and Noctalia's config directory.
+!/.gitignore
+!/noctalia/
+
+# Inside noctalia, ignore by default, then allow only curated files.
+/noctalia/**
+
+# Hand-written + GUI-managed Noctalia config.
+!/noctalia/*.toml
+
+# Internal app state can contain private runtime data - keep it out.
+/noctalia/state.toml
+
+# User palettes and templates.
+!/noctalia/palettes/
+!/noctalia/palettes/**
+!/noctalia/templates/
+!/noctalia/templates/**
+!/noctalia/wallpapers/
+!/noctalia/wallpapers/**
+
+# Generated absolute symlink from Aether - don't track it.
+/noctalia/palettes/aether.json
+
+# App configs whose active theme is Noctalia.
+!/bat/
+!/bat/**
+!/btop/
+!/btop/**
+!/cava/
+!/cava/**
+!/fzf/
+!/fzf/**
+!/ghostty/
+!/ghostty/**
+!/gtk-3.0/
+!/gtk-3.0/**
+!/gtk-4.0/
+!/gtk-4.0/**
+!/helix/
+!/helix/**
+!/qt5ct/
+!/qt5ct/**
+!/qt6ct/
+!/qt6ct/**
+!/rio/
+!/rio/**
+!/snappy-switcher/
+!/snappy-switcher/**
+!/sonora/
+!/sonora/**
+/sonora/sonora.backup.json
+!/strata/
+!/strata/**
+!/zed/
+!/zed/**
+!/kdeglobals
+
+# Herdr: only its Noctalia theme and layouts, not the 13M of icons.
+!/herdr-app/
+/herdr-app/**
+!/herdr-app/themes/
+!/herdr-app/themes/**
+!/herdr-app/layouts/
+!/herdr-app/layouts/**
+
+# Umbriel compositor config - this is what launches Noctalia.
+!/umbriel/
+!/umbriel/**
+/umbriel/*.bak-*
+
+# Extra safety net if the rules above are ever widened.
+*.key
+*.pem
+*.crt
+*token*
+*secret*
+*password*

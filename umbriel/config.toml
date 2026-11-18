@@ -1,0 +1,22 @@
+[include]
+files = [
+    "shaders/community/animation/glitch/effect.toml",
+    "shaders/community/screen/midnight-fog/effect.toml",
+
+    "outputs.toml",
+
+    "conf.d/environment.toml",
+    "conf.d/general.toml",
+    "conf.d/appearance.toml",
+    "conf.d/animation.toml",
+    "conf.d/input.toml",
+    "conf.d/layout.toml",
+    "conf.d/keybinds.toml",
+    "conf.d/rules.toml",
+    "conf.d/overview.toml",
+]
+
+[include.optional]
+files = [
+  "noctalia.toml",
+]

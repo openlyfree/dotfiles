@@ -1,0 +1,6 @@
+[general]
+autostart = ["noctalia"]
+xwayland = true
+xwayland_native_resolution = true
+xwayland_xsettings = true
+show_cheatsheet = false

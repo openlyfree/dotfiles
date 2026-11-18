@@ -1,0 +1,15 @@
+# Window open/close animations.
+[animation]
+enabled = true
+
+[animation.windows_in]
+enabled = true
+effect = "glitch"
+duration_ms = 150
+curve = "linear"
+
+[animation.windows_out]
+enabled = true
+effect = "glitch"
+duration_ms = 150
+curve = "linear"

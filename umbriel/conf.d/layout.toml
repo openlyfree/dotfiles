@@ -1,0 +1,9 @@
+# Tiling layout.
+[layout]
+mode = "stacking"
+
+[layout.scrolling]
+default_extent_fraction = 0.5
+
+[layout.dwindle]
+new_toward_cursor = true

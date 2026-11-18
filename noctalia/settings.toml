@@ -1,0 +1,368 @@
+config_version = 20
+
+[accessibility]
+ui_scale = 0.95000000670552254
+
+[audio]
+enable_overdrive = true
+enable_sounds = false
+
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "default", "bar" ]
+
+    [bar.bar]
+    capsule = true
+    capsule_opacity = 0.0
+    capsule_padding = 4.0
+    capsule_radius = 0
+    capsule_thickness = 0.99999998137354851
+    center = []
+    end = [ "media", "tray", "notifications", "volume", "brightness", "battery", "control-center", "clock" ]
+    margin_ends = 0
+    padding = 6
+    position = "bottom"
+    radius = 0
+    start = [ "launcher", "workspaces", "taskbar" ]
+    thickness = 30
+
+    [bar.default]
+    background_opacity = 0.99999997764825821
+    capsule_opacity = 0.0
+    capsule_radius = 0
+    compositor_blur = false
+    enabled = false
+    end = [ "tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "bar" ]
+    panel_overlap = 0
+    radius = 0
+    shadow = false
+    start = [ "clock", "group:g1", "media" ]
+    thickness = 30
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "cpu", "temp", "ram" ]
+        opacity = 0.0
+        padding = 6.0
+        radius = 8.0
+
+[battery]
+warning_threshold = 20
+
+[brightness]
+enable_ddcutil = true
+minimum_brightness = 0.0099999997764825821
+sync_all_monitors = true
+
+[calendar]
+enabled = true
+event_time_format = "{:%-I:%M %p}"
+
+    [calendar.account.personal_google]
+    type = "google"
+
+[control_center]
+show_shortcut_labels = false
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "alexander/screen-toolkit:toggle"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.99999997764825821
+icon_size = 31
+radius = 0
+shadow = false
+show_dots = true
+
+[lockscreen]
+blur_intensity = 0.99999997764825821
+fingerprint = false
+monitors = [ "eDP-1", "DP-1" ]
+tint_intensity = 0.99999997764825821
+transition = [ "fade" ]
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 540.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.0
+        background_radius = 0.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 0.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 512.0
+    cy = 586.0
+    output = "HDMI-A-1"
+    placement_height = 768.0
+    placement_width = 1024.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 600.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.0
+        background_radius = 0.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 0.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[notification]
+background_opacity = 0.99999997764825821
+position = "bottom_right"
+
+[osd]
+background_opacity = 0.99999997764825821
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+[plugin_settings."alexander/screen-toolkit"]
+record-audio-out = true
+record-codec = "hevc"
+video-path = "/home/ethan/Videos/Screenshots"
+
+[plugin_settings."noctalia/umbriel-companion"]
+panel_placement = "floating"
+
+[plugins]
+enabled = [
+    "noctalia/umbriel-companion",
+    "alexander/screen-toolkit",
+    "prponkshe/umbriel-displays",
+    "elijaharch/wl-screen-mirror"
+]
+
+[shell]
+card_borders = false
+corner_radius_scale = 0.0
+font_family = "Cascadia Code"
+input_borders = false
+lang = "en"
+polkit_agent = true
+popup_borders = false
+popup_shadows = false
+settings_window_translucent = false
+umbriel_audio_provider_enabled = true
+
+    [shell.launcher]
+    compact = true
+    layout = "simple"
+    show_app_origin_indicator = false
+    width = 620
+
+        [shell.launcher.providers.emoji]
+        global = false
+
+        [shell.launcher.providers.panels]
+        global = true
+
+        [shell.launcher.providers.session]
+        global = false
+
+        [shell.launcher.providers.wallpaper]
+        global = true
+
+    [shell.panel]
+    open_near_click_launcher = true
+    session_placement = "floating"
+    session_position = "center"
+    shadow = false
+
+    [shell.screen_corners]
+    size = 100
+
+    [shell.screenshot]
+    directory = "/home/ethan/Pictures/Screenshots"
+    show_cursor = true
+
+    [shell.shadow]
+    alpha = 0.0
+
+    [shell.window_switcher]
+    current_workspace_only = true
+    style = "compact"
+
+[system.monitor]
+network_poll_seconds = 0
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Catppuccin Mocha Mauve-Lavender"
+custom_palette = "wallpaper-1920x1200-ts"
+pure_black_dark = false
+source = "custom"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "helix", "kcolorscheme", "qt", "umbriel" ]
+    community_ids = [
+        "antigravity",
+        "opencode",
+        "pi-agent",
+        "pywalfox",
+        "gimp",
+        "musescore",
+        "obsidian",
+        "zed",
+        "pandora-launcher",
+        "prismlauncher",
+        "steam",
+        "obs",
+        "strata",
+        "bat",
+        "fzf",
+        "herdr"
+    ]
+
+[wallpaper]
+fill_mode = "stretch"
+transition = [ "fade" ]
+
+    [wallpaper.default]
+    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+
+    [wallpaper.last]
+    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/ethan/Pictures/Wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/ethan/.config/noctalia/wallpapers/snow-leopard-mei-mei-wallpaper-v0-r7akxh2bcezh1.webp"
+
+[weather]
+unit = "imperial"
+
+[widget.clock]
+capsule = false
+format = "{:%I:%M %p, %B %d}"
+
+[widget.control-center]
+custom_image_colorize = true
+
+[widget.cpu]
+stat = "cpu_freq"
+
+[widget.media]
+art_size = 96
+capsule = true
+font_scale = 0.90000000000000013
+hide_album_art = true
+hide_artist = true
+title_scroll = "always"
+
+[widget.taskbar]
+icon_scale = 1.2500000000000002
+prefer_symbolic_icons = true
+workspace_group_capsule = false
+
+[widget.workspaces]
+capsule_radius = 0
+enabled = false

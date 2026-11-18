@@ -1,0 +1,54 @@
+# Window and layer-shell matching rules.
+# Rule lists collect entries across included files; order matters.
+
+# Blur all windows by default.
+[[window_rule]]
+blur = true
+
+# Noctalia panels float.
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_floating_size_px = { width = 1080, height = 920 }
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+# Picture-in-Picture stays floating, pinned, and out of the way.
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in [Pp]icture)$"
+default_floating = true
+default_pinned = true
+default_focused = false
+focus_on_activate = false
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+# mpv floats.
+[[window_rule]]
+match.app_id = "^mpv$"
+default_floating = true
+
+# Niri's global clip-to-geometry rule. Radius 0 keeps every window square.
+[[window_rule]]
+corner_radius = 0
+
+# Noctalia notification toasts.
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+# Noctalia layer surfaces get blur.
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+
+[[layer_rule]]
+match.namespace = "^noctalia-(notification|dock|panel|attached-panel|osd)$"
+blur_optimized = false

@@ -1,0 +1,56 @@
+# Noctalia hand-written base config.
+#
+# This file is the declarative layer. Every *.toml in ~/.config/noctalia/ is
+# loaded alphabetically, then ~/.local/state/noctalia/settings.toml (the GUI
+# state) is loaded last and wins. Keep GUI-owned values out of here.
+
+[backdrop]
+tint_intensity = 0.0
+
+[desktop_widgets]
+enabled = false
+
+[location]
+address = "Phoenix"
+
+[shell]
+button_borders = false
+password_style = "random"
+# Umbriel compositor: typing in the overview launches the focused app.
+umbriel_overview_type_to_launch_enabled = true
+
+    [shell.launcher]
+    categories = false
+
+    [shell.panel]
+    list_item_background = true
+    open_near_click_control_center = true
+
+[wallpaper]
+directory = "~/.config/noctalia/wallpapers"
+
+[widget.battery]
+show_label = false
+
+[widget.brightness]
+show_label = false
+
+[widget.clock]
+capsule_padding = 8
+capsule_radius = "auto"
+font_scale = 0.9
+
+[widget.control-center]
+glyph = "adjustments-horizontal"
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.network]
+show_label = false
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+show_label = false

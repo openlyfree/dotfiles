@@ -1,0 +1,9 @@
+# Overview and the hot corner that opens it.
+[hot_corners.top_left]
+enabled = true
+delay_ms = 172
+action = "overview-open"
+
+[overview]
+background_blur = true
+workspace_wallpaper = false
