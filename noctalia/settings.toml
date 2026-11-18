@@ -305,7 +305,9 @@ wallpaper_scheme = "m3-tonal-spot"
     community_ids = [
         "antigravity",
         "opencode",
+        "sonora",
         "pywalfox",
+        "serein",
         "gimp",
         "obsidian",
         "zed",

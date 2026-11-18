@@ -43,8 +43,8 @@
 !/gtk-4.0/**
 !/helix/
 !/helix/**
-!/qt5ct/
-!/qt5ct/**
+# Qt5 theme is unused (QT_QPA_PLATFORMTHEME=qt6ct); the qt template regenerates it.
+/qt5ct/
 !/qt6ct/
 !/qt6ct/**
 !/sonora/
@@ -56,15 +56,6 @@
 !/zed/
 !/zed/**
 !/kdeglobals
-
-# Herdr: only user themes and layouts, not the 13M of icons.
-!/herdr-app/
-/herdr-app/**
-!/herdr-app/themes/
-!/herdr-app/themes/**
-/herdr-app/themes/noctalia.json
-!/herdr-app/layouts/
-!/herdr-app/layouts/**
 
 # Umbriel compositor config - this is what launches Noctalia.
 !/umbriel/
