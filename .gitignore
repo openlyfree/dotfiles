@@ -23,9 +23,6 @@
 !/noctalia/wallpapers/
 !/noctalia/wallpapers/**
 
-# Generated absolute symlink from Aether - don't track it.
-/noctalia/palettes/aether.json
-
 # App configs whose active theme is Noctalia.
 !/bat/
 !/bat/**
